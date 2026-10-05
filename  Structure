@@ -1,0 +1,20 @@
+house-rent-prediction-api/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # Your FastAPI code (with refined lifespan & typing)
+│   ├── schemas.py           # Pydantic models & enums
+│   └── config.py            # Environment settings
+├── models/
+│   └── .gitkeep             # Git keeps the folder; model weights tracked via DVC/Git LFS
+├── tests/
+│   ├── __init__.py
+│   └── test_api.py          # Pytest unit & integration tests
+├── .dockerignore
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── requirements.txt
+└── train.py                 # Script to generate models/rent_prediction_model.pkl
